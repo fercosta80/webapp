@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from urllib.parse import urlencode
 
 try: 
   
@@ -11,5 +12,5 @@ try:
  
 except:
  
-   print ('Location: cadastrar.py?'+urlencode({'msg':'Erro ao cadastrar'})
-   print()
+   print('Location: cadastrar.py?'+urlencode({'msg':'Erro ao cadastrar'}))
+   
