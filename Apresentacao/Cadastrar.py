@@ -1,7 +1,7 @@
 #!/usr/bin/python3.6
 
 
-import Negocio.Produto
+import Produto
 
 import sys, cgi, cgitb
 
