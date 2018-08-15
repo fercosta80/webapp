@@ -1,30 +1,28 @@
-#!/usr/bin/python
+#!/usr/bin/python3.6
 
-from urllib.parse import urlencode
 
-from Negocio.Produto import Produto
- 
+import Negocio.Produto
+
 import sys, cgi, cgitb
 
-sys.path.append('/srv/www/cgi-bin/webapp/')
+# sys.path.append('/srv/www/cgi-bin/webapp/')
+sys.path.append ('/home/fernando/cgi-bin/webapp/')
 
+cgitb.enable ()
 
-cgitb.enable()
- 
-p = Produto()
- 
-ret = p.selecionar()
- 
-v = cgi.FormContentDict()
- 
+p = Negocio.Produto.Produto ()
+
+ret = p.selecionar ()
+
+v = cgi.FormContentDict ()
+
 print ('Content-Type: text/html')
- 
 
-print('<html>')
-  
-print('<head>')
- 
-print('<title>Cadastro de produto</title>')
- 
-print('</head>')
-print('</html>')
+print ('<html>')
+
+print ('<head>')
+
+print ('<title>Cadastro de produto</title>')
+
+print ('</head>')
+print ('</html>')
